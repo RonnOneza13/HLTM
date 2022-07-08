@@ -1,0 +1,21 @@
+{% extends 'nabr.html' %}
+{% load static %}
+{%block content%}
+
+<h2>Edit Information</h2>
+<form method="POST" action="">
+{% csrf_token%}
+
+    <div> Last Name: {{form.LName}}  </div>
+    <div> First Name: {{form.Fname}} </div>
+    <div> Address: {{form.PAddress}} </div>
+    <div> Number: {{form.Pnumber}} </div>
+    <div> Food: {{form.Food}} </div>
+    <div> Order/s & Price {{form.Order}} </div>
+    <div>
+    <input type='submit' class= 'btn btn-sm' ></input>
+    </div>
+
+</form>
+
+{%endblock %}

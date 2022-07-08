@@ -1,0 +1,72 @@
+{% extends 'nabr.html' %}
+{% load static %}
+{% block content %}
+			<h2>Healthy Menu</h2>
+            
+            <p1 class="Motto">Stop Eating non-healthy foods.</p1>
+            <br> <br>
+<form method="POST" action="/Payment/">
+    {% csrf_token%}
+        <label>Last Name:<br></label><input type="text " id="purchasername" name="lname" size="42" placeholder="Please fill up" required/>
+        	<br>
+		<label>First Name:<br></label><input type="text " id="purchasername" name="fname" size="42" placeholder="Please fill up" required/>
+			<br>
+
+		<label>Address:<br></label><input type="text" id="purchaseremail" name="address" size="42" placeholder="Please fill up" required /> 
+		<br>
+    	<label>Contact #:<br></label><input type="tel" id="Usernumber" name="number" size="42" placeholder="Mobile Number" required />
+			<br>		
+		<form>
+            <h3>Healthy Menu</h3>
+            
+        <div hidden>
+                <a href="Roast Chicken Pasta.html"><img class="Pics" src= "{% static "img/Pasta.jpg"%}" size='10px'></a>
+                <a href="Lemon Drizzle Muffins.html"><img class="Pics" src= "{% static "img/Muffins.jpg"%}"></a>
+                <a href="Vegetarian Omellete.html"><img class="Pics" src= "{% static "img/Omelette.jpg"%}"></a>
+                <a href="Banana Muffin.html"><img class="Pics" src= "{% static "img/Banana Muffins.jpg"%}"></a>
+                <a href="Tuna Dip.html"><img class="Pics" src= "{% static "img/Tuna Dip.jpg"%}"></a>
+            </img>
+                <br>
+                <a href="Tuna Patties.html"><img class="Pics" src= "{% static "img/Tuna Patties.jpg"%}"></a>
+                <a href="Honey Mustard Chicken.html"><img class="Pics" src= "{% static "img/MHC.jpg"%}"></a>
+                <a href="Tuna Pasta Salad.html"><img class="Pics" src= "{% static "img/Tuna Pasta Salad.jpg"%}"></a>
+                <a href="Beef with gravy.html"><img class="Pics" src= "{% static "img/BWG.jpg"%}"></a>
+                <a href="Butter Squash Soup.html"><img class="Pics" src= "{% static "img/BSS.jpg"%}"></a>
+            </img>
+        </div>
+            <br>
+    <select name="food" style="width: 332px; height: 30px;" id="BuyerTopic" placeholder="Select Your Topic:" required>
+                <option value ="" disabled selected="">Food:</option>
+                <option value="Chicken Baked Pasta">Chicken Baked Pasta</option>
+                <option value ="Lemon Drizzle Muffins">Lemon Drizzle Muffins</option>
+                <option value ="Vegetarian Omellete">Vegetarian Omellete</option>
+                <option value="Banana MuffinAbout Features">Banana Muffin</option>
+                <option value="Tuna Dip">Tuna Dip</option>
+                <option value="Tuna Potato Patties">Tuna Potato Patties</option>
+                <option value="Honey Mustard Chicken">Honey Mustard Chicken</option>
+                <option value ="Tuna Pasta Salad">Tuna Pasta Salad</option>
+                <option value ="Beef with gravy">Beef with gravy</option>
+                <option value="Butternut Squash Soup">Butternut Squash Soup</option>
+    </select>
+    <br><br>
+    <select name="prqua" style="width: 332px; height: 30px;" id="BuyerTopic" placeholder="Select Your Topic:" required>
+                <option value ="" disabled selected="">Quantity:</option>
+                <option value="1 order = ₱120">1 order = ₱120</option>
+                <option value ="2 orders = ₱240">2 orders = ₱240</option>
+                <option value ="3 orders= ₱360">3 orders= ₱360</option>
+                <option value="4 orders = ₱480">4 orders = ₱480</option>
+                <option value="5 orders = ₱600">5 orders = ₱600</option>
+                <option value="6 orders = ₱720">6 orders = ₱720</option>
+                <option value="7 orders = ₱840">7 orders = ₱840</option>
+                <option value ="8 orders = ₱960">8 orders = ₱960</option>
+                <option value ="9 orders = ₱1080">9 orders = ₱1080</option>
+                <option value="10 orders = ₱1200">10 orders = ₱1200</option>
+    </select>
+    <br> <br>
+	<input  class="btnSend" id="btnSend" type="submit" value="Continue"/>
+		
+</form>
+
+	
+{% endblock %}
+	

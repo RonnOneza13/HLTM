@@ -1,0 +1,60 @@
+{% extends 'nabr.html' %}
+{% load static %}
+{%block content%}
+<div>
+    <br>
+    <table border="5" bordercolor="" align="center">
+        <tr>
+            <th colspan="10">Order Details</th>
+        </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td>First Name:</td>
+                <td>Address:</td>
+                <td>Number:</td>
+                <td>Food:</td>
+                <td>Order/s & Price:</td>
+
+            </tr>
+            <tr>
+            {%for x in HealthyContact%}
+                <td>{{x.LName}}</td>
+                <td>{{x.Fname}}</td>
+                <td>{{x.PAddress}}</td>
+                <td>{{x.Pnumber}}</td>
+                <td>{{x.Food}}</td>
+                <td>{{x.Order}}</td>
+                <td>
+                    <a type = 'button' href="{% url 'arprojsys:edit' x.pk%}" class="btn btn-sm">Edit </a> <a href="{% url 'arprojsys:delete' x.pk %}" class="btn btn-sm">Delete </a>
+                </td>
+            </tr>
+            {% endfor %}
+    </table>
+    </div>
+    <br>
+    <div>
+        <table border="5" bordercolor="" align="center">
+        <tr>
+            <th colspan="10">Payment Details</th>
+        </tr>
+                <tr>
+                    <td>Date order:</td>
+                    <td>Date Deliver:</td>
+                    <td>Payment:</td>
+                    <td>Status:</td>
+                </tr>
+                <tr>
+                {%for x in ModPayDate%}
+                    <td>{{x.DToday}}</td>
+                    <td>{{x.DelToday}}</td>
+                    <td>{{x.Mop}}</td>
+                    <td>
+                        <a href="{% url 'arprojsys:pedit' x.pk%}" > Edit </a>    <a href="{% url 'arprojsys:pdelete' x.pk %}" > Delete </a>
+                    </td>
+                </tr>
+                {% endfor %}
+          </table>
+    </div>
+
+</div>
+{%endblock%}

@@ -1,0 +1,162 @@
+body {background-color: #4A4974; overflow: hidden;}
+
+h1 {
+            text-align: left;
+            font-size:60px;
+            font-family:Constantia;
+            color:blanchedalmond;
+            margin-top:0.5%;
+            user-select: none;
+        }
+        a {
+            font-size:30px;
+            color:#92A3CA;
+            font-family: Constantia;
+            text-decoration: none;
+            margin-right:3%;
+            user-select: none;
+        }
+        .btns {
+            font-size:15px;
+            color:blanchedalmond;
+            font-family: Constantia;
+            text-decoration: none;
+            margin-right:1%;
+            user-select: none;
+        }
+        .btns:hover {
+            color: black;
+        }
+        .btn1 {
+            margin-left: 35%;
+            font-size:15px;
+            color:blanchedalmond;
+            font-family: Constantia;
+            text-decoration: none;
+            margin-right:1.5%;
+            user-select: none;
+        }
+        .btn1:hover {
+            color: black;
+        }
+
+        .Motto {
+        font-size:20px;
+        color:blanchedalmond;
+        font-family:Constantia;
+        user-select: none;
+   		}
+        .btnSend{
+        font-size: 20px;
+        }
+        .btnSend:hover {
+            color: black;
+        }
+        .Pics {
+            width: 250px;
+            height: 150px;
+            padding-left: 1%;
+            padding-top: 1.5%;
+            border-radius: 20%;
+        }
+        .text {
+            font-size:20px;
+            color:blanchedalmond;
+            font-family: Constantia;   
+            user-select: none;
+        }
+        .text1 {
+            font-size:20px;
+            color:blanchedalmond;
+            font-family: Constantia;   
+            user-select: none;
+            padding-left: 3%;
+        }
+        .text2 {
+            font-size:20px;
+            color:blanchedalmond;
+            font-family: Constantia;   
+            user-select: none;
+            padding-left: 7.3%;
+        }
+        .text3 {
+            font-size:20px;
+            color:blanchedalmond;
+            font-family: Constantia;   
+            user-select: none;
+            padding-left: 8%;
+        }
+        .text4 {
+            font-size:20px;
+            color:blanchedalmond;
+            font-family: Constantia;   
+            user-select: none;
+            padding-left: 9.3%;
+        }
+        .text5 {
+            font-size:20px;
+            color:blanchedalmond;
+            font-family: Constantia;   
+            user-select: none;
+            padding-left: 12.5%;
+        }
+        .text6 {
+            font-size:20px;
+            color:blanchedalmond;
+            font-family: Constantia;   
+            user-select: none;
+            padding-left: 3.5%;
+        }
+        .text7 {
+            font-size:20px;
+            color:blanchedalmond;
+            font-family: Constantia;   
+            user-select: none;
+            padding-left: 7.5%;
+        }
+        .text8 {
+            font-size:20px;
+            color:blanchedalmond;
+            font-family: Constantia;   
+            user-select: none;
+            padding-left: 8%;
+        }
+        .text9 {
+            font-size:20px;
+            color:blanchedalmond;
+            font-family: Constantia;   
+            user-select: none;
+            padding-left: 10.5%;
+        }
+        .text10 {
+            font-size:20px;
+            color:blanchedalmond;
+            font-family: Constantia;   
+            user-select: none;
+            padding-left: 8.5%;
+        }
+        .sum{
+        width: 30%;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+        }
+        .pay1{
+        color:blanchedalmond;
+        font-size: 25px;
+        }
+        .pay2{
+        color:blanchedalmond;
+        font-size: 25px;
+        }
+        .ordersum{
+        color:blanchedalmond;
+        font-size: 25px;
+        }
+        .done{
+        text-align: center;
+        color: green;
+        font-size: 20px;
+        margin-left: 900px;
+        color: white;
+        }

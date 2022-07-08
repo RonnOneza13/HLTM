@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+         <link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Healthy Eating</title>
+    </head>
+        <body>
+            <div>
+                <h2>Healthy Eating</h2>
+                <br>
+                <a class="btn1" href="{% url "arprojsys:Mainpage"%}">Home</a>
+                <a class="btns" href="{% url "arprojsys:Payment"%}">Payment</a>
+                <a class="btns" href="{% url "arprojsys:Summary"%}">Summary</a>
+
+                {% block content %}
+
+                {% endblock %}
+            </div>
+        </body>
+</html>

@@ -1,0 +1,18 @@
+{% extends 'nabr.html' %}
+{% load static %}
+{%block content%}
+
+<h1>Edit Summary of Payment</h1>
+<form method="POST" action="">
+{% csrf_token%}
+
+    <div> Date Today: {{form.DToday}}  </div>
+    <div> Date Deliver: {{form.DelToday}} </div>
+    <div> Payment: {{form.Mop}} </div>
+    <div>
+    <input type='submit' class= 'btn primary' ></input>
+    </div>
+
+</form>
+
+{%endblock %}

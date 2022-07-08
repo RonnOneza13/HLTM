@@ -1,0 +1,28 @@
+{% extends 'nabr.html' %}
+{% load static %}
+{%block content%}
+<br> <br> <br> <br>
+<center>
+    <form method="POST" action="/Summary/">
+    {% csrf_token%}
+        <div>
+            <label for="date">Enter Date Today:</label> <input type="Date" name="datetoday">
+            <br>
+            <br> 
+            <label for="date">Date of Delivery:</label> <input type="Date" name="deliverydate">
+        </div>
+        <br>
+        <br>  
+        <select name="pay" style="width: 332px; height: 30px;" id="BuyerTopic" placeholder="Select Your Topic:" required>
+                    <option value ="" disabled selected="">Mode of Payment:</option>
+                    <option value="COD">COD</option>
+                    <option value ="Gcash">GCash</option>
+                    <option value ="PayMaya">PayMaya</option>
+        </select>
+        <br> <br>
+        <input  class="btnSend" id="btnSend" type="submit" value="Place Order"/>
+</center>
+
+
+
+{%endblock%}
